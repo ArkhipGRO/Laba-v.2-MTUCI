@@ -28,7 +28,7 @@ max_of_two(x, y)
 name = str(input('Введите ваше имя: '))
 age = int(input('Введите ваш возраст (Если не хотите указывать возраст, напишите 0): '))
 
-def describe_person(name, age):
+def describe_person(name, age=30):
     if age == 0:
         return print('Вас зовут', name, 'вам', age+30)
     elif age > 0:
